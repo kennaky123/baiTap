@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>CLB lập trình</h2>
+    <p>
+      Đây là <strong>mô tả</strong> <em>về</em>
+      <span style="color: red">CLB lập trình</span>
+    </p>
+    <h2>CLB tiếng anh</h2>
+    <p>
+      Đây là <strong>mô tả</strong> <em>về</em>
+      <span style="color: blue">CLB tiếng anh</span>
+    </p>
+    <h2>CLB truyền thông</h2>
+    <p>
+      Đây là <strong>mô tả</strong> <em>về</em>
+      <span style="color: aqua">CLB truyền thông</span>
+    </p>
+    <h2>CLB âm nhạc</h2>
+    <p>
+      Đây là <strong>mô tả</strong> <em>về</em>
+      <span style="color: violet">CLB âm nhạc</span>
+    </p>
+    <form id="club-form">
+      <h2>Phiếu đăng ký</h2>
+      <div class="required-field">
+        <label for="name">Họ và tên:</label>
+        <input type="text" placeholder="nhập Tên của bạn..." />
+      </div>
+      <div class="required-field">
+        <label for="mail">Email:</label>
+        <input type="email" name="mail" placeholder="nhập mail của bạn..." />
+      </div>
+      <div class="required-field">
+        <label for="tel">Số điện thoại:</label>
+        <input
+          type="tel"
+          name="tel"
+          placeholder="nhập số điện thoại của bạn..."
+        />
+      </div>
+      <div class="required-field">
+        <label>Giới tính:</label>
+        <label for="gender"><input type="radio" name="gender" />Nam</label>
+        <label for="gender"><input type="radio" name="gender" />Nữ</label>
+      </div>
+      <div class="required-field">
+        <label>CLB</label>
+        <select name="CLB">
+          <option>CLB Lập trình</option>
+          <option>CLB Tiếng Anh</option>
+          <option>CLB Truyền thông</option>
+          <option>CLB Âm nhạc</option>
+        </select>
+      </div>
+      <div class="required-field">
+        <label>Sở thích</label>
+        <label><input type="checkbox" />Đọc sách</label>
+        <label><input type="checkbox" />Chơi thể thao</label>
+        <label><input type="checkbox" />Du lịch</label>
+        <label><input type="checkbox" />Công nghệ</label>
+      </div>
+
+      <label>Giới thiệu bản thân</label>
+      <div class="required-field">
+        <textarea name="" id=""></textarea>
+      </div>
+      <div class="required-field">
+        <label id="agreement"
+          ><input type="checkbox" />Tôi cam kết các thông tin trên là chính xác.
+        </label>
+      </div>
+      <button>Gửi đăng ký</button>
+      <button>Làm lại</button>
+    </form>
+  </body>
+</html>
