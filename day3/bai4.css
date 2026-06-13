@@ -1,0 +1,43 @@
+li:first-child {
+  color: #e53935;
+  font-weight: bold;
+}
+li:last-child {
+  color: #1565c0;
+}
+li:nth-child(odd) {
+  background: #f5f5f5;
+}
+li:nth-child(even) {
+  background: #e8f4fd;
+}
+li:not(:last-child) {
+  border-bottom: 1px solid #dee2e6;
+}
+li:hover {
+  background: #fff9c4;
+  padding-left: 12px;
+  transition: all 0.2s;
+}
+li:nth-child(3n) {
+  font-style: italic;
+}
+input:focus {
+  outline: none;
+  border: 2px solid #2196f3;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+}
+input:disabled {
+  background: #f5f5f5;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+input:hover {
+  background: #1565c0;
+  transform: translateY(-1px);
+  transition: all 0.2s;
+}
+#agree:checked + span {
+  color: #27ae60;
+  font-weight: bold;
+}

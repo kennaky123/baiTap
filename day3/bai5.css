@@ -1,0 +1,29 @@
+.intro::first-letter {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #e53935;
+  float: left;
+  line-height: 1;
+  margin-right: 4px;
+}
+.intro::first-line {
+  font-style: italic;
+  color: #555;
+}
+.article::selection {
+  background: #ffd700;
+  color: #1a1a1a;
+}
+input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+input::placeholder:focus {
+  color: red;
+}
+.quote::before {
+  content: "❝";
+}
+.quote::after {
+  content: "❝";
+}
