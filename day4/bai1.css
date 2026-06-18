@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(173, 250, 255);
+}
+.course-box {
+  background-color: aliceblue;
+  border: 50px solid;
+  border-color: rgb(250, 166, 123);
+  border-radius: 15px;
+}
+h2 {
+  text-align: center;
+  color: blueviolet;
+  text-transform: uppercase;
+}
+.subtitle {
+  text-align: center;
+  color: gray;
+  font-style: italic;
+}
+.description {
+  color: rgb(35, 32, 118);
+  line-height: normal;
+}
+.note {
+  background-color: aqua;
+  border: 15px solid;
+  text-align: center;
+  font-weight: bold;
+}

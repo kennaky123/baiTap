@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(255, 255, 176);
+}
+.discount-box {
+  background-color: white;
+  border: 15px solid;
+  border-color: rgb(255, 205, 111);
+  border-radius: 15px;
+}
+h2 {
+  color: orange;
+  text-align: center;
+  font-size: larger;
+}
+.main-text {
+  text-align: center;
+  color: aqua;
+}
+.discount-info {
+  background-color: blueviolet;
+  border: 15px dashed;
+  border-radius: 15px;
+  font-weight: bold;
+}
+.warning {
+  color: red;
+  text-align: center;
+  text-transform: uppercase;
+}
