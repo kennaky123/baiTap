@@ -1,0 +1,35 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 70px;
+}
+.switch input {
+  display: none;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: gray;
+  border-radius: 999px;
+  transition: 0.4s;
+}
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  left: 3px;
+  bottom: 2.5px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+.switch input:checked + .slider {
+  background-color: green;
+}
+.switch input:checked + .slider::before {
+  transform: translateX(79px);
+}

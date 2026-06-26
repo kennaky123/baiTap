@@ -1,0 +1,233 @@
+.container {
+  display: flex;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.subheading {
+  font-family: "Poppins", sans-serif;
+  width: 126px;
+  height: 27px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #5e6282;
+}
+.heading {
+  font-family: "Volkhov", serif;
+  width: 511px;
+  height: 130px;
+  font-weight: 700;
+  font-size: 50px;
+  margin-top: 0px;
+}
+.content {
+  display: flex;
+  margin-bottom: 10px;
+}
+.content2 {
+  margin-left: 15px;
+}
+.img {
+  display: flex;
+  align-items: center;
+}
+.content img {
+  width: 47px;
+  height: 48px;
+}
+.text1 {
+  font-family: "Poppins", sans-serif;
+  width: 254px;
+  height: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  color: #5e6282;
+  margin: 5px;
+}
+.text2 {
+  font-family: "Poppins", sans-serif;
+  width: 327px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #5e6282;
+  margin: 5px;
+}
+.left {
+  width: 400px;
+}
+.right {
+  width: 531px;
+}
+.container2 {
+  width: 370px;
+  height: 400px;
+  z-index: -1;
+  border-radius: 45px;
+  background-color: #ffffff;
+  margin-left: 30%;
+  margin-top: 20%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+.container2 img {
+  position: relative;
+  left: 6.5%;
+  top: 5%;
+}
+.text3 {
+  font-family: "Poppins", sans-serif;
+  width: 134px;
+  height: 22px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 125%;
+  letter-spacing: 1.5%;
+  color: #080809;
+  margin-top: 10%;
+  position: relative;
+  left: 6%;
+}
+.text3-left {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: -0.5%;
+  width: 88px;
+  height: 20px;
+  color: #84829a;
+  position: relative;
+  left: 6%;
+}
+.text4-left {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: -0.5%;
+  width: 138px;
+  height: 20px;
+  color: #84829a;
+  position: relative;
+  right: 25%;
+}
+.option img {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 3%;
+  margin-right: 3%;
+}
+hr {
+  color: #84829a;
+  position: relative;
+  right: 12%;
+  margin-top: 15px;
+  height: 16px;
+}
+.text-left {
+  display: flex;
+}
+.cuoi-cung {
+  display: flex;
+}
+.cuoi-cung img {
+  width: 16px;
+  height: 16px;
+  flex-grow: 1;
+}
+.heart {
+  width: 20px;
+  height: 18.584728240966797px;
+  flex-grow: 1;
+}
+.text-cuoi {
+  width: 126px;
+  height: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: -2%;
+  flex-grow: 2;
+  color: #84829a;
+  position: relative;
+  left: -10%;
+}
+.container3 {
+  width: 100px;
+}
+.container3 img {
+  position: relative;
+  left: 25px;
+  top: 17px;
+}
+.position {
+  z-index: -1;
+  border-radius: 45px;
+  background-color: #ffffff;
+  width: 263px;
+  height: 129px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+.container-img {
+  margin: 7%;
+}
+.container-img img {
+  width: 50px;
+  height: 50px;
+}
+.position-text1 {
+  font-family: "Poppins", sans-serif;
+  width: 58px;
+  height: 17px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125%;
+  letter-spacing: -3.5%;
+  color: #84829a;
+  margin: 20px 0px 0px 0px;
+}
+.position-text2 {
+  width: 107px;
+  height: 22px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 125%;
+  letter-spacing: -1.5%;
+  color: #080809;
+  margin: 5px 0px 0px 0px;
+}
+.position-text3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125%;
+  letter-spacing: -5.5%;
+  color: #080809;
+}
+.position-text3 span {
+  color: #8b6ddd;
+}
+.position {
+  display: flex;
+  position: relative;
+  left: 75%;
+  bottom: 35%;
+  z-index: 2;
+}
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.progress-fill {
+  width: 40%;
+  height: 100%;
+  background-color: #8b6de9;
+  border-radius: 20px;
+}
