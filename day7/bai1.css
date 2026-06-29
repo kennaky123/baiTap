@@ -1,35 +1,30 @@
-.switch {
-  position: relative;
-  display: inline-block;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background-color: #000000;
   width: 150px;
-  height: 70px;
-}
-.switch input {
-  display: none;
-}
-.slider {
-  position: absolute;
+  height: 150px;
+  border-radius: 15px;
   cursor: pointer;
-  inset: 0;
-  background-color: gray;
-  border-radius: 999px;
-  transition: 0.4s;
 }
-.slider::before {
-  content: "";
-  position: absolute;
-  width: 65px;
-  height: 65px;
-  left: 3px;
-  bottom: 2.5px;
-  background-color: white;
-  border-radius: 50%;
-  transition: 0.4s;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+.gach {
+  width: 100px;
+  height: 5px;
+  background-color: aliceblue;
+  margin: 0 auto;
+  border-radius: 10px;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
-.switch input:checked + .slider {
-  background-color: green;
+#toggle:checked + .container .gach-1 {
+  transform: translateY(25px) rotate(45deg);
 }
-.switch input:checked + .slider::before {
-  transform: translateX(79px);
+#toggle:checked + .container .gach-2 {
+  opacity: 0;
+}
+#toggle:checked + .container .gach-3 {
+  transform: translateY(-25px) rotate(-45deg);
 }
