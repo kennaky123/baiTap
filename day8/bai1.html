@@ -3,12 +3,149 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Scholars Menu</title>
+
     <link rel="stylesheet" href="bai1.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
   </head>
+
   <body>
-    <div class="box">
-      <span></span>
+    <div class="container">
+      <!-- checkbox để bật/tắt menu mobile -->
+      <input type="checkbox" id="menu-toggle" hidden />
+
+      <div class="up">
+        <div class="left">
+          <img src="logo.webp" alt="logo" />
+
+          <label for="menu-toggle" class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+        </div>
+
+        <div class="middle">
+          <ul class="container-ul">
+            <li>
+              <a href="#">Home</a>
+              <ul class="sub-menu">
+                <li><a href="#">Menu item 1</a></li>
+                <li><a href="#">Menu item 2</a></li>
+                <li><a href="#">Menu item 3</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#">Courses</a>
+              <ul class="sub-menu">
+                <li><a href="#">Course 2 Column</a></li>
+                <li><a href="#">Course 3 Column</a></li>
+                <li><a href="#">Course Details</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#">Events</a>
+              <ul class="sub-menu">
+                <li><a href="#">Event List</a></li>
+                <li><a href="#">Event Grid</a></li>
+                <li><a href="#">Event Details</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#">Pages</a>
+              <ul class="sub-menu">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Teachers</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#">Portfolio</a>
+              <ul class="sub-menu">
+                <li><a href="#">Portfolio 2 Column</a></li>
+                <li><a href="#">Portfolio 3 Column</a></li>
+                <li><a href="#">Portfolio Details</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#">Blog</a>
+              <ul class="sub-menu">
+                <li><a href="#">Blog List</a></li>
+                <li><a href="#">Blog Grid</a></li>
+                <li><a href="#">Blog Details</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#">Shop</a>
+              <ul class="sub-menu">
+                <li><a href="#">Shop Page</a></li>
+                <li><a href="#">Product Details</a></li>
+                <li><a href="#">Cart</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="right">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-arrow-down"></i>
+        </div>
+      </div>
+
+      <!-- MENU MOBILE -->
+      <div class="mobile-menu">
+        <ul>
+          <li>
+            <a href="#">HOME</a>
+            <i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li>
+            <a href="#">COURSES</a>
+            <i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li>
+            <a href="#">EVENTS</a>
+            <i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li>
+            <a href="#">PAGES</a>
+            <i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li>
+            <a href="#">PORTFOLIO</a>
+            <i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li>
+            <a href="#">BLOG</a>
+            <i class="fa-solid fa-chevron-down"></i>
+          </li>
+
+          <li>
+            <a href="#">SHOP</a>
+            <i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li>
+            <a href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+      <div class="down">
+        <h1>SHOP</h1>
+        <p>Home / Pages / Shop</p>
+      </div>
     </div>
+    <div class="content"></div>
   </body>
 </html>
