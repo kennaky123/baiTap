@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@theme {
+  --font-roboto: "Roboto Mono", monospace;
+}
+@theme {
+  --font-roboto-flex: "Roboto Flex", sans-serif;
+}
