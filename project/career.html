@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,7 +20,7 @@
   <body class="bg-[#0F0F0F]">
     <header class="w-full px-[40px]">
       <div
-        class="max-w-[1820px] mx-auto h-[111px] px-6 lg:px-[50px] flex items-center justify-between border border-[#1C1C21] rounded-2xl bg-[#1A1A1A] mt-[25px]"
+        class="relative max-w-[1820px] mx-auto h-[111px] px-6 lg:px-[50px] flex items-center justify-between border border-[#1C1C21] rounded-2xl bg-[#1A1A1A] mt-[25px]"
       >
         <div class="">
           <img
@@ -29,84 +29,150 @@
             class="xl:w-[130px] md:w-[97px] w-[86px] h-auto"
           />
         </div>
+        <!-- menu mobile -->
+        <input id="mobile-menu" type="checkbox" class="peer hidden" />
+
+        <label
+          for="mobile-menu"
+          class="flex h-[44px] w-[44px] cursor-pointer items-center justify-center rounded-2xl bg-[#0F0F0F] xl:hidden"
+        >
+          <img src="img/menu.png" alt="Open menu" class="h-[24px] w-[24px]" />
+        </label>
+
+        <div
+          class="absolute left-0 top-full z-50 grid w-full grid-rows-[0fr] opacity-0 transition-all duration-500 ease-in-out peer-checked:grid-rows-[1fr] peer-checked:opacity-100 xl:hidden"
+        >
+          <div class="overflow-hidden">
+            <ul
+              class="mt-[10px] flex flex-col gap-[5px] rounded-2xl border border-[#1C1C21] bg-[#1A1A1A] p-[10px]"
+            >
+              <li>
+                <a
+                  href="index.html"
+                  class="block rounded-xl bg-[#0F0F0F] px-[20px] py-[15px] font-roboto text-[#81807E]"
+                >
+                  HOME
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="service.html"
+                  class="block rounded-xl bg-[#0F0F0F] px-[20px] py-[15px] font-roboto text-[#81807E]"
+                >
+                  SERVICES
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="project.html"
+                  class="block rounded-xl bg-[#0F0F0F] px-[20px] py-[15px] font-roboto text-[#81807E]"
+                >
+                  PROJECTS
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="about.html"
+                  class="block rounded-xl bg-[#0F0F0F] px-[20px] py-[15px] font-roboto text-[#81807E]"
+                >
+                  ABOUT
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="contact.html"
+                  class="block rounded-xl bg-[#CE7D63] px-[20px] py-[15px] font-roboto text-[#0F0F0F]"
+                >
+                  CONTACT US
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- end menu mobile -->
         <div class="xl:w-[954px] xl:h-[63px] hidden xl:flex">
-          <div
-            class="w-[92px] h-[63px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px]"
-          >
-            <a href="index.html"
-              ><p
-                class="font-roboto text-[#E7BEB1] font-[500] w-[44px] h-[27px]"
+          <a href="index.html">
+            <div
+              class="w-[92px] h-[63px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px] hover:bg-[#2d2522]"
+            >
+              <p
+                class="font-roboto text-[#81807E] font-[500] w-[44px] h-[27px]"
               >
                 HOME
-              </p></a
+              </p>
+            </div>
+          </a>
+          <a href="service.html">
+            <div
+              class="w-[135px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px] hover:bg-[#2d2522]"
             >
-          </div>
-          <div
-            class="w-[135px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px]"
-          >
-            <a href="service.html"
-              ><p
+              <p
                 class="font-roboto text-[#81807E] font-[500] w-[68px] h-[27px]"
               >
                 SEVICES
-              </p></a
+              </p>
+            </div>
+          </a>
+          <a href="project.html">
+            <div
+              class="w-[135px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px] hover:bg-[#2d2522]"
             >
-          </div>
-          <div
-            class="w-[135px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px]"
-          >
-            <a href="project.html"
-              ><p
+              <p
                 class="font-roboto text-[#81807E] font-[500] w-[87PX] h-[27PX]"
               >
                 PROJECTS
-              </p></a
+              </p>
+            </div>
+          </a>
+          <a href="about.html">
+            <div
+              class="w-[103px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px] hover:bg-[#2d2522]"
             >
-          </div>
-          <div
-            class="w-[103px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px]"
-          >
-            <a href="about.html"
-              ><p
+              <p
                 class="font-roboto text-[#81807E] font-[500] w-[55px] h-[27px]"
               >
                 ABOUT
-              </p></a
+              </p>
+            </div>
+          </a>
+          <a href="career.html">
+            <div
+              class="w-[124px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px] hover:bg-[#2d2522]"
             >
-          </div>
-          <div
-            class="w-[124px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px]"
-          >
-            <a href="career.html"
-              ><p
-                class="font-roboto text-[#81807E] font-[500] w-[76px] h-[27px]"
+              <p
+                class="font-roboto text-[#E7BEB1] font-[500] w-[76px] h-[27px]"
               >
                 CAREERS
-              </p></a
+              </p>
+            </div>
+          </a>
+          <a href="blog.html">
+            <div
+              class="w-[103px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px] hover:bg-[#2d2522]"
             >
-          </div>
-          <div
-            class="w-[103px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px]"
-          >
-            <a href="blog.html"
-              ><p
+              <p
                 class="font-roboto text-[#81807E] font-[500] w-[55px] h-[27px]"
               >
                 BLOGS
-              </p></a
+              </p>
+            </div>
+          </a>
+          <a href="contact.html">
+            <div
+              class="w-[157px] h-[63px] md:[74px] md:[49px] bg-[#CE7D63] flex items-center justify-center rounded-2xl ml-[15px] hover:bg-[#2d2522]"
             >
-          </div>
-          <div
-            class="w-[157px] h-[63px] md:[74px] md:[49px] bg-[#CE7D63] flex items-center justify-center rounded-2xl ml-[15px]"
-          >
-            <a href="contact.html"
-              ><p
+              <p
                 class="font-roboto text-[#0F0F0F] font-[500] w-[109px] h-[27px]"
               >
                 CONTACTS US
-              </p></a
-            >
-          </div>
+              </p>
+            </div>
+          </a>
         </div>
       </div>
     </header>
@@ -128,21 +194,13 @@
             Unlock Your Potential<br />
             In The Digital World
           </h1>
+          <img
+            src="img/logo-hero-left.png"
+            alt=""
+            class="xl:h-auto xl:w-auto max-h-[117px] max-w-[300px] xl:ml-[25px] w-[175px] h-[50px] xl:hidden"
+          />
 
           <!-- MOBILE START PROJECT -->
-          <div
-            class="mt-[8px] flex items-center gap-[7px] text-[#CE7D63] xl:hidden"
-          >
-            <div
-              class="flex h-[30px] w-[30px] items-center justify-center rounded-full border border-[#CE7D63] text-[15px]"
-            >
-              →
-            </div>
-
-            <p class="font-roboto-flex text-[10px] font-[500] uppercase">
-              Start A Project
-            </p>
-          </div>
 
           <!-- DESKTOP TITLE -->
           <div class="hidden xl:block">
@@ -280,7 +338,7 @@
                 <span
                   class="mx-[5px] text-[7px] text-[#CE7D63] xl:m-2 xl:text-base"
                 >
-                  •
+                  â€¢
                 </span>
 
                 <span
@@ -302,7 +360,7 @@
                 <span
                   class="mx-[5px] text-[7px] text-[#CE7D63] xl:m-2 xl:text-base"
                 >
-                  •
+                  â€¢
                 </span>
 
                 <span
@@ -324,7 +382,7 @@
                 <span
                   class="mx-[5px] text-[7px] text-[#CE7D63] xl:m-2 xl:text-base"
                 >
-                  •
+                  â€¢
                 </span>
 
                 <span
@@ -423,7 +481,7 @@
                 <span
                   class="mx-[5px] text-[7px] text-[#CE7D63] xl:m-2 xl:text-base"
                 >
-                  •
+                  â€¢
                 </span>
 
                 <span
@@ -445,7 +503,7 @@
                 <span
                   class="mx-[5px] text-[7px] text-[#CE7D63] xl:m-2 xl:text-base"
                 >
-                  •
+                  â€¢
                 </span>
 
                 <span
@@ -467,7 +525,7 @@
                 <span
                   class="mx-[5px] text-[7px] text-[#CE7D63] xl:m-2 xl:text-base"
                 >
-                  •
+                  â€¢
                 </span>
 
                 <span
@@ -553,7 +611,7 @@
                 class="flex h-[47px] w-[314px] items-center justify-center rounded-2xl bg-[#1F1F1F]"
               >
                 <span class="text-[#B3B3B2]">Salary</span>
-                <span class="m-2 text-[#CE7D63]">•</span>
+                <span class="m-2 text-[#CE7D63]">â€¢</span>
                 <span class="text-[18px] text-[#E6E6E6]">
                   $50,000 - $65,000 per year
                 </span>
@@ -563,7 +621,7 @@
                 class="flex h-[47px] w-[197px] items-center justify-center rounded-2xl bg-[#1F1F1F]"
               >
                 <span class="text-[#B3B3B2]">Experience</span>
-                <span class="m-2 text-[#CE7D63]">•</span>
+                <span class="m-2 text-[#CE7D63]">â€¢</span>
                 <span class="text-[18px] text-[#E6E6E6]">3+ years</span>
               </div>
 
@@ -571,7 +629,7 @@
                 class="flex h-[47px] w-[212px] items-center justify-center rounded-2xl bg-[#1F1F1F]"
               >
                 <span class="text-[#B3B3B2]">Deadline</span>
-                <span class="m-2 text-[#CE7D63]">•</span>
+                <span class="m-2 text-[#CE7D63]">â€¢</span>
                 <span class="text-[18px] text-[#E6E6E6]">20/11/2025</span>
               </div>
             </div>
@@ -630,7 +688,7 @@
                 class="flex h-[47px] w-[314px] items-center justify-center rounded-2xl bg-[#1F1F1F]"
               >
                 <span class="text-[#B3B3B2]">Salary</span>
-                <span class="m-2 text-[#CE7D63]">•</span>
+                <span class="m-2 text-[#CE7D63]">â€¢</span>
                 <span class="text-[18px] text-[#E6E6E6]">
                   $60,000 - $80,000 per year
                 </span>
@@ -640,7 +698,7 @@
                 class="flex h-[47px] w-[197px] items-center justify-center rounded-2xl bg-[#1F1F1F]"
               >
                 <span class="text-[#B3B3B2]">Experience</span>
-                <span class="m-2 text-[#CE7D63]">•</span>
+                <span class="m-2 text-[#CE7D63]">â€¢</span>
                 <span class="text-[18px] text-[#E6E6E6]">5+ years</span>
               </div>
 
@@ -648,7 +706,7 @@
                 class="flex h-[47px] w-[212px] items-center justify-center rounded-2xl bg-[#1F1F1F]"
               >
                 <span class="text-[#B3B3B2]">Deadline</span>
-                <span class="m-2 text-[#CE7D63]">•</span>
+                <span class="m-2 text-[#CE7D63]">â€¢</span>
                 <span class="text-[18px] text-[#E6E6E6]">05/12/2025</span>
               </div>
             </div>
@@ -679,7 +737,7 @@
           <div
             class="flex h-[32px] w-[32px] items-center justify-center rounded-full border border-[#292929] text-[16px] text-[#F3DFD8]"
           >
-            ↓
+            â†“
           </div>
 
           <p
@@ -735,7 +793,7 @@
             <p
               class="px-[15px] pt-[14px] font-roboto-flex text-[7px] leading-[1.55] text-[#B3B3B2] xl:px-[35px] xl:pt-[15px] xl:text-[16px]"
             >
-              Visit our website's “Careers” page to explore the current job
+              Visit our website's â€œCareersâ€ page to explore the current job
               listings. Review the various roles available and select the
               position that aligns with your skills, experience, and career
               aspirations.
@@ -868,7 +926,7 @@
             <p
               class="px-[35px] pt-[15px] font-roboto-flex text-[16px] leading-[1.55] text-[#B3B3B2]"
             >
-              Click the “Apply Now” button on the job listing page to access our
+              Click the â€œApply Nowâ€ button on the job listing page to access our
               online application form. Fill in your personal information,
               contact details, and the position you are applying for.
             </p>
@@ -1024,7 +1082,7 @@
           <div
             class="flex h-[30px] w-[30px] items-center justify-center rounded-full border border-[#292929] text-[16px] text-[#F3DFD8]"
           >
-            ↓
+            â†“
           </div>
 
           <p
@@ -1227,7 +1285,7 @@
             </div>
           </article>
 
-          <!-- CARD 4: CHỈ HIỆN TỪ XL -->
+          <!-- CARD 4: CHá»ˆ HIá»†N Tá»ª XL -->
           <article
             class="hidden h-[398px] flex-col overflow-hidden rounded-2xl bg-[#1A1A1A] xl:flex"
           >
@@ -1278,14 +1336,14 @@
           </article>
         </div>
 
-        <!-- ALL TESTIMONIALS - CHỈ HIỆN DƯỚI XL -->
+        <!-- ALL TESTIMONIALS - CHá»ˆ HIá»†N DÆ¯á»šI XL -->
         <div
           class="mt-[5px] flex min-h-[84px] w-full items-center justify-center gap-[12px] rounded-[10px] bg-[#1A1A1A] xl:hidden"
         >
           <div
             class="flex h-[48px] w-[48px] items-center justify-center rounded-full border border-[#2B2B30] text-[25px] text-[#F3DFD8]"
           >
-            ↓
+            â†“
           </div>
 
           <p
@@ -1311,7 +1369,7 @@
             Frequently Asked Questions
           </h2>
 
-          <!-- Chỉ hiện desktop -->
+          <!-- Chá»‰ hiá»‡n desktop -->
           <div class="hidden items-center xl:flex">
             <img
               src="img/arrow-our-service.png"
@@ -1551,19 +1609,19 @@
             class="flex min-w-max items-center gap-[10px] whitespace-nowrap font-roboto text-[10px] uppercase tracking-[1px] text-[#676665] xl:gap-5 xl:text-[18px]"
           >
             <span>Follow Us on Social Media</span>
-            <span class="text-[#CE7D63]">•</span>
+            <span class="text-[#CE7D63]">â€¢</span>
 
             <span>Follow Us on Social Media</span>
-            <span class="text-[#CE7D63]">•</span>
+            <span class="text-[#CE7D63]">â€¢</span>
 
             <span>Follow Us on Social Media</span>
-            <span class="text-[#CE7D63]">•</span>
+            <span class="text-[#CE7D63]">â€¢</span>
 
             <span>Follow Us on Social Media</span>
-            <span class="text-[#CE7D63]">•</span>
+            <span class="text-[#CE7D63]">â€¢</span>
 
             <span>Follow Us on Social Media</span>
-            <span class="text-[#CE7D63]">•</span>
+            <span class="text-[#CE7D63]">â€¢</span>
           </div>
         </div>
 
@@ -1961,7 +2019,7 @@
               <p
                 class="font-roboto-mono text-[10px] text-[#B3B3B2] xl:text-[18px]"
               >
-                © 2024 NexGen. All rights reserved.
+                Â© 2024 NexGen. All rights reserved.
               </p>
 
               <div
@@ -1991,3 +2049,4 @@
     <!-- end footer -->
   </body>
 </html>
+

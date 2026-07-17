@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -19,7 +19,7 @@
   <body class="bg-[#0F0F0F]">
     <header class="w-full px-[40px]">
       <div
-        class="max-w-[1820px] mx-auto h-[111px] px-6 lg:px-[50px] flex items-center justify-between border border-[#1C1C21] rounded-2xl bg-[#1A1A1A] mt-[25px]"
+        class="relative max-w-[1820px] mx-auto h-[111px] px-6 lg:px-[50px] flex items-center justify-between border border-[#1C1C21] rounded-2xl bg-[#1A1A1A] mt-[25px]"
       >
         <div class="">
           <img
@@ -28,84 +28,150 @@
             class="xl:w-[130px] md:w-[97px] w-[86px] h-auto"
           />
         </div>
+        <!-- menu mobile -->
+        <input id="mobile-menu" type="checkbox" class="peer hidden" />
+
+        <label
+          for="mobile-menu"
+          class="flex h-[44px] w-[44px] cursor-pointer items-center justify-center rounded-2xl bg-[#0F0F0F] xl:hidden"
+        >
+          <img src="img/menu.png" alt="Open menu" class="h-[24px] w-[24px]" />
+        </label>
+
+        <div
+          class="absolute left-0 top-full z-50 grid w-full grid-rows-[0fr] opacity-0 transition-all duration-500 ease-in-out peer-checked:grid-rows-[1fr] peer-checked:opacity-100 xl:hidden"
+        >
+          <div class="overflow-hidden">
+            <ul
+              class="mt-[10px] flex flex-col gap-[5px] rounded-2xl border border-[#1C1C21] bg-[#1A1A1A] p-[10px]"
+            >
+              <li>
+                <a
+                  href="index.html"
+                  class="block rounded-xl bg-[#0F0F0F] px-[20px] py-[15px] font-roboto text-[#81807E]"
+                >
+                  HOME
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="service.html"
+                  class="block rounded-xl bg-[#0F0F0F] px-[20px] py-[15px] font-roboto text-[#81807E]"
+                >
+                  SERVICES
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="project.html"
+                  class="block rounded-xl bg-[#0F0F0F] px-[20px] py-[15px] font-roboto text-[#81807E]"
+                >
+                  PROJECTS
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="about.html"
+                  class="block rounded-xl bg-[#0F0F0F] px-[20px] py-[15px] font-roboto text-[#81807E]"
+                >
+                  ABOUT
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="contact.html"
+                  class="block rounded-xl bg-[#CE7D63] px-[20px] py-[15px] font-roboto text-[#0F0F0F]"
+                >
+                  CONTACT US
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- end menu mobile -->
         <div class="xl:w-[954px] xl:h-[63px] hidden xl:flex">
-          <div
-            class="w-[92px] h-[63px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px]"
-          >
-            <a href="index.html"
-              ><p
-                class="font-roboto text-[#E7BEB1] font-[500] w-[44px] h-[27px]"
+          <a href="index.html">
+            <div
+              class="w-[92px] h-[63px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px] hover:bg-[#2d2522]"
+            >
+              <p
+                class="font-roboto text-[#81807E] font-[500] w-[44px] h-[27px]"
               >
                 HOME
-              </p></a
+              </p>
+            </div>
+          </a>
+          <a href="service.html">
+            <div
+              class="w-[135px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px] hover:bg-[#2d2522]"
             >
-          </div>
-          <div
-            class="w-[135px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px]"
-          >
-            <a href="service.html"
-              ><p
+              <p
                 class="font-roboto text-[#81807E] font-[500] w-[68px] h-[27px]"
               >
                 SEVICES
-              </p></a
+              </p>
+            </div>
+          </a>
+          <a href="project.html">
+            <div
+              class="w-[135px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px] hover:bg-[#2d2522]"
             >
-          </div>
-          <div
-            class="w-[135px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px]"
-          >
-            <a href="project.html"
-              ><p
+              <p
                 class="font-roboto text-[#81807E] font-[500] w-[87PX] h-[27PX]"
               >
                 PROJECTS
-              </p></a
+              </p>
+            </div>
+          </a>
+          <a href="about.html">
+            <div
+              class="w-[103px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px] hover:bg-[#2d2522]"
             >
-          </div>
-          <div
-            class="w-[103px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px]"
-          >
-            <a href="about.html"
-              ><p
+              <p
                 class="font-roboto text-[#81807E] font-[500] w-[55px] h-[27px]"
               >
                 ABOUT
-              </p></a
+              </p>
+            </div>
+          </a>
+          <a href="career.html">
+            <div
+              class="w-[124px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px] hover:bg-[#2d2522]"
             >
-          </div>
-          <div
-            class="w-[124px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px]"
-          >
-            <a href="career.html"
-              ><p
+              <p
                 class="font-roboto text-[#81807E] font-[500] w-[76px] h-[27px]"
               >
                 CAREERS
-              </p></a
+              </p>
+            </div>
+          </a>
+          <a href="blog.html">
+            <div
+              class="w-[103px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px] hover:bg-[#2d2522]"
             >
-          </div>
-          <div
-            class="w-[103px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px]"
-          >
-            <a href="blog.html"
-              ><p
-                class="font-roboto text-[#81807E] font-[500] w-[55px] h-[27px]"
+              <p
+                class="font-roboto text-[#E7BEB1] font-[500] w-[55px] h-[27px]"
               >
                 BLOGS
-              </p></a
+              </p>
+            </div>
+          </a>
+          <a href="contact.html">
+            <div
+              class="w-[157px] h-[63px] md:[74px] md:[49px] bg-[#CE7D63] flex items-center justify-center rounded-2xl ml-[15px] hover:bg-[#2d2522]"
             >
-          </div>
-          <div
-            class="w-[157px] h-[63px] md:[74px] md:[49px] bg-[#CE7D63] flex items-center justify-center rounded-2xl ml-[15px]"
-          >
-            <a href="contact.html"
-              ><p
+              <p
                 class="font-roboto text-[#0F0F0F] font-[500] w-[109px] h-[27px]"
               >
                 CONTACTS US
-              </p></a
-            >
-          </div>
+              </p>
+            </div>
+          </a>
         </div>
       </div>
     </header>
@@ -196,7 +262,7 @@
                 class="flex h-[47px] items-center rounded-2xl bg-[#1F1F1F] px-[20px]"
               >
                 <span class="text-[#B3B3B2]">Category</span>
-                <span class="mx-2 text-[#CE7D63]">•</span>
+                <span class="mx-2 text-[#CE7D63]">â€¢</span>
                 <span class="text-[18px] text-[#E6E6E6]">Design</span>
               </div>
 
@@ -204,7 +270,7 @@
                 class="flex h-[47px] items-center rounded-2xl bg-[#1F1F1F] px-[20px]"
               >
                 <span class="text-[#B3B3B2]">Read Time</span>
-                <span class="mx-2 text-[#CE7D63]">•</span>
+                <span class="mx-2 text-[#CE7D63]">â€¢</span>
                 <span class="text-[18px] text-[#E6E6E6]">6 Mins</span>
               </div>
 
@@ -212,7 +278,7 @@
                 class="flex h-[47px] items-center rounded-2xl bg-[#1F1F1F] px-[20px]"
               >
                 <span class="text-[#B3B3B2]">Author</span>
-                <span class="mx-2 text-[#CE7D63]">•</span>
+                <span class="mx-2 text-[#CE7D63]">â€¢</span>
                 <span class="text-[18px] text-[#E6E6E6]">Laura Turner</span>
               </div>
             </div>
@@ -306,90 +372,96 @@
           </article>
 
           <!-- BLOG 2 -->
-          <article
-            class="flex min-h-[290px] flex-col rounded-[10px] bg-[#1A1A1A] px-[10px] py-[10px] xl:h-[692px] xl:rounded-2xl xl:px-[17px] xl:py-[15px]"
-          >
-            <div
-              class="h-[125px] w-full overflow-hidden rounded-[8px] xl:h-[329px] xl:rounded-xl"
+          <a href="blog-open.html"
+            ><article
+              class="flex min-h-[290px] flex-col rounded-[10px] bg-[#1A1A1A] px-[10px] py-[10px] xl:h-[692px] xl:rounded-2xl xl:px-[17px] xl:py-[15px]"
             >
-              <img
-                src="img/blog-second.png"
-                alt="Mastering Minimalistic Design"
-                class="h-full w-full object-cover"
-              />
-            </div>
-
-            <div class="flex flex-1 flex-col px-[8px] pb-[8px] xl:px-0 xl:pb-0">
-              <h3
-                class="mt-[15px] font-roboto-flex text-[12px] font-[500] uppercase leading-[1.45] text-[#F9EFEC] xl:mt-[30px] xl:text-[24px]"
+              <div
+                class="h-[125px] w-full overflow-hidden rounded-[8px] xl:h-[329px] xl:rounded-xl"
               >
-                Mastering the Art of Minimalistic Design
+                <img
+                  src="img/blog-second.png"
+                  alt="Mastering Minimalistic Design"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+
+              <div
+                class="flex flex-1 flex-col px-[8px] pb-[8px] xl:px-0 xl:pb-0"
+              >
+                <h3
+                  class="mt-[15px] font-roboto-flex text-[12px] font-[500] uppercase leading-[1.45] text-[#F9EFEC] xl:mt-[30px] xl:text-[24px]"
+                >
+                  Mastering the Art of Minimalistic Design
+                </h3>
+
+                <p
+                  class="mt-[8px] font-roboto-flex text-[8px] leading-[1.55] text-[#B3B3B2] xl:mt-[20px] xl:text-[18px]"
+                >
+                  Simplicity and elegance take center stage in minimalistic
+                  design. Learn the principles of minimalism, how to effectively
+                  communicate with fewer elements...
+                </p>
+
+                <div
+                  class="mt-auto flex items-center gap-[7px] pt-[18px] xl:gap-4"
+                >
+                  <img
+                    src="img/arrow-our-service.png"
+                    alt=""
+                    class="h-[30px] w-[30px] xl:h-[68px] xl:w-[68px]"
+                  />
+
+                  <p
+                    class="font-roboto-mono text-[8px] uppercase tracking-[0.7px] text-[#B3B3B2] xl:font-roboto xl:text-[20px]"
+                  >
+                    Read Full Blog
+                  </p>
+                </div>
+              </div>
+            </article></a
+          >
+
+          <!-- BLOG 3 - DESKTOP ONLY -->
+          <a href="#"
+            ><article
+              class="hidden h-[692px] flex-col rounded-2xl bg-[#1A1A1A] px-[17px] py-[15px] xl:flex"
+            >
+              <div class="h-[329px] w-full overflow-hidden rounded-xl">
+                <img
+                  src="img/blog-third.png"
+                  alt="Psychology of Visual Design"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+
+              <h3
+                class="mt-[30px] font-roboto-flex text-[24px] font-[500] uppercase text-[#F9EFEC]"
+              >
+                The Psychology of Visual Design in Branding
               </h3>
 
               <p
-                class="mt-[8px] font-roboto-flex text-[8px] leading-[1.55] text-[#B3B3B2] xl:mt-[20px] xl:text-[18px]"
+                class="mt-[20px] font-roboto-flex text-[18px] leading-[1.55] text-[#B3B3B2]"
               >
-                Simplicity and elegance take center stage in minimalistic
-                design. Learn the principles of minimalism, how to effectively
-                communicate with fewer elements...
+                Uncover the impact of visual elements in branding and how they
+                influence customer perceptions and emotions. Explore color
+                psychology, typography choices...
               </p>
 
-              <div
-                class="mt-auto flex items-center gap-[7px] pt-[18px] xl:gap-4"
-              >
+              <div class="mt-auto flex items-center gap-4">
                 <img
                   src="img/arrow-our-service.png"
                   alt=""
-                  class="h-[30px] w-[30px] xl:h-[68px] xl:w-[68px]"
+                  class="h-[68px] w-[68px]"
                 />
 
-                <p
-                  class="font-roboto-mono text-[8px] uppercase tracking-[0.7px] text-[#B3B3B2] xl:font-roboto xl:text-[20px]"
-                >
+                <p class="font-roboto text-[20px] uppercase text-[#B3B3B2]">
                   Read Full Blog
                 </p>
               </div>
-            </div>
-          </article>
-
-          <!-- BLOG 3 - DESKTOP ONLY -->
-          <article
-            class="hidden h-[692px] flex-col rounded-2xl bg-[#1A1A1A] px-[17px] py-[15px] xl:flex"
+            </article></a
           >
-            <div class="h-[329px] w-full overflow-hidden rounded-xl">
-              <img
-                src="img/blog-third.png"
-                alt="Psychology of Visual Design"
-                class="h-full w-full object-cover"
-              />
-            </div>
-
-            <h3
-              class="mt-[30px] font-roboto-flex text-[24px] font-[500] uppercase text-[#F9EFEC]"
-            >
-              The Psychology of Visual Design in Branding
-            </h3>
-
-            <p
-              class="mt-[20px] font-roboto-flex text-[18px] leading-[1.55] text-[#B3B3B2]"
-            >
-              Uncover the impact of visual elements in branding and how they
-              influence customer perceptions and emotions. Explore color
-              psychology, typography choices...
-            </p>
-
-            <div class="mt-auto flex items-center gap-4">
-              <img
-                src="img/arrow-our-service.png"
-                alt=""
-                class="h-[68px] w-[68px]"
-              />
-
-              <p class="font-roboto text-[20px] uppercase text-[#B3B3B2]">
-                Read Full Blog
-              </p>
-            </div>
-          </article>
         </div>
 
         <!-- ALL BLOGS - MOBILE ONLY -->
@@ -399,7 +471,7 @@
           <div
             class="flex h-[32px] w-[32px] items-center justify-center rounded-full border border-[#292929] text-[16px] text-[#F3DFD8]"
           >
-            ↓
+            â†“
           </div>
 
           <p
@@ -601,7 +673,7 @@
             </div>
           </article>
 
-          <!-- CARD 4: CHỈ HIỆN TỪ XL -->
+          <!-- CARD 4: CHá»ˆ HIá»†N Tá»ª XL -->
           <article
             class="hidden h-[398px] flex-col overflow-hidden rounded-2xl bg-[#1A1A1A] xl:flex"
           >
@@ -652,14 +724,14 @@
           </article>
         </div>
 
-        <!-- ALL TESTIMONIALS - CHỈ HIỆN DƯỚI XL -->
+        <!-- ALL TESTIMONIALS - CHá»ˆ HIá»†N DÆ¯á»šI XL -->
         <div
           class="mt-[5px] flex min-h-[84px] w-full items-center justify-center gap-[12px] rounded-[10px] bg-[#1A1A1A] xl:hidden"
         >
           <div
             class="flex h-[48px] w-[48px] items-center justify-center rounded-full border border-[#2B2B30] text-[25px] text-[#F3DFD8]"
           >
-            ↓
+            â†“
           </div>
 
           <p
@@ -685,7 +757,7 @@
             Frequently Asked Questions
           </h2>
 
-          <!-- Chỉ hiện desktop -->
+          <!-- Chá»‰ hiá»‡n desktop -->
           <div class="hidden items-center xl:flex">
             <img
               src="img/arrow-our-service.png"
@@ -925,19 +997,19 @@
             class="flex min-w-max items-center gap-[10px] whitespace-nowrap font-roboto text-[10px] uppercase tracking-[1px] text-[#676665] xl:gap-5 xl:text-[18px]"
           >
             <span>Follow Us on Social Media</span>
-            <span class="text-[#CE7D63]">•</span>
+            <span class="text-[#CE7D63]">â€¢</span>
 
             <span>Follow Us on Social Media</span>
-            <span class="text-[#CE7D63]">•</span>
+            <span class="text-[#CE7D63]">â€¢</span>
 
             <span>Follow Us on Social Media</span>
-            <span class="text-[#CE7D63]">•</span>
+            <span class="text-[#CE7D63]">â€¢</span>
 
             <span>Follow Us on Social Media</span>
-            <span class="text-[#CE7D63]">•</span>
+            <span class="text-[#CE7D63]">â€¢</span>
 
             <span>Follow Us on Social Media</span>
-            <span class="text-[#CE7D63]">•</span>
+            <span class="text-[#CE7D63]">â€¢</span>
           </div>
         </div>
 
@@ -1335,7 +1407,7 @@
               <p
                 class="font-roboto-mono text-[10px] text-[#B3B3B2] xl:text-[18px]"
               >
-                © 2024 NexGen. All rights reserved.
+                Â© 2024 NexGen. All rights reserved.
               </p>
 
               <div
@@ -1365,3 +1437,4 @@
     <!-- end footer -->
   </body>
 </html>
+

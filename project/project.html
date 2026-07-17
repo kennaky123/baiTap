@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,7 +20,7 @@
   <body class="bg-[#0F0F0F]">
     <header class="w-full px-[40px]">
       <div
-        class="max-w-[1820px] mx-auto h-[111px] px-6 lg:px-[50px] flex items-center justify-between border border-[#1C1C21] rounded-2xl bg-[#1A1A1A] mt-[25px]"
+        class="relative max-w-[1820px] mx-auto h-[111px] px-6 lg:px-[50px] flex items-center justify-between border border-[#1C1C21] rounded-2xl bg-[#1A1A1A] mt-[25px]"
       >
         <div class="">
           <img
@@ -29,84 +29,150 @@
             class="xl:w-[130px] md:w-[97px] w-[86px] h-auto"
           />
         </div>
+        <!-- menu mobile -->
+        <input id="mobile-menu" type="checkbox" class="peer hidden" />
+
+        <label
+          for="mobile-menu"
+          class="flex h-[44px] w-[44px] cursor-pointer items-center justify-center rounded-2xl bg-[#0F0F0F] xl:hidden"
+        >
+          <img src="img/menu.png" alt="Open menu" class="h-[24px] w-[24px]" />
+        </label>
+
+        <div
+          class="absolute left-0 top-full z-50 grid w-full grid-rows-[0fr] opacity-0 transition-all duration-500 ease-in-out peer-checked:grid-rows-[1fr] peer-checked:opacity-100 xl:hidden"
+        >
+          <div class="overflow-hidden">
+            <ul
+              class="mt-[10px] flex flex-col gap-[5px] rounded-2xl border border-[#1C1C21] bg-[#1A1A1A] p-[10px]"
+            >
+              <li>
+                <a
+                  href="index.html"
+                  class="block rounded-xl bg-[#0F0F0F] px-[20px] py-[15px] font-roboto text-[#81807E]"
+                >
+                  HOME
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="service.html"
+                  class="block rounded-xl bg-[#0F0F0F] px-[20px] py-[15px] font-roboto text-[#81807E]"
+                >
+                  SERVICES
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="project.html"
+                  class="block rounded-xl bg-[#0F0F0F] px-[20px] py-[15px] font-roboto text-[#E7BEB1]"
+                >
+                  PROJECTS
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="about.html"
+                  class="block rounded-xl bg-[#0F0F0F] px-[20px] py-[15px] font-roboto text-[#81807E]"
+                >
+                  ABOUT
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="contact.html"
+                  class="block rounded-xl bg-[#CE7D63] px-[20px] py-[15px] font-roboto text-[#0F0F0F]"
+                >
+                  CONTACT US
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- end menu mobile -->
         <div class="xl:w-[954px] xl:h-[63px] hidden xl:flex">
-          <div
-            class="w-[92px] h-[63px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px]"
-          >
-            <a href="index.html"
-              ><p
-                class="font-roboto text-[#E7BEB1] font-[500] w-[44px] h-[27px]"
+          <a href="index.html">
+            <div
+              class="w-[92px] h-[63px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px] hover:bg-[#2d2522]"
+            >
+              <p
+                class="font-roboto text-[#81807E] font-[500] w-[44px] h-[27px]"
               >
                 HOME
-              </p></a
+              </p>
+            </div>
+          </a>
+          <a href="service.html">
+            <div
+              class="w-[135px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px] hover:bg-[#2d2522]"
             >
-          </div>
-          <div
-            class="w-[135px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px]"
-          >
-            <a href="service.html"
-              ><p
+              <p
                 class="font-roboto text-[#81807E] font-[500] w-[68px] h-[27px]"
               >
                 SEVICES
-              </p></a
+              </p>
+            </div>
+          </a>
+          <a href="project.html">
+            <div
+              class="w-[135px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px] hover:bg-[#2d2522]"
             >
-          </div>
-          <div
-            class="w-[135px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px]"
-          >
-            <a href="project.html"
-              ><p
-                class="font-roboto text-[#81807E] font-[500] w-[87PX] h-[27PX]"
+              <p
+                class="font-roboto text-[#E7BEB1] font-[500] w-[87PX] h-[27PX]"
               >
                 PROJECTS
-              </p></a
+              </p>
+            </div>
+          </a>
+          <a href="about.html">
+            <div
+              class="w-[103px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px] hover:bg-[#2d2522]"
             >
-          </div>
-          <div
-            class="w-[103px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px]"
-          >
-            <a href="about.html"
-              ><p
+              <p
                 class="font-roboto text-[#81807E] font-[500] w-[55px] h-[27px]"
               >
                 ABOUT
-              </p></a
+              </p>
+            </div>
+          </a>
+          <a href="career.html">
+            <div
+              class="w-[124px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px] hover:bg-[#2d2522]"
             >
-          </div>
-          <div
-            class="w-[124px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px]"
-          >
-            <a href="career.html"
-              ><p
+              <p
                 class="font-roboto text-[#81807E] font-[500] w-[76px] h-[27px]"
               >
                 CAREERS
-              </p></a
+              </p>
+            </div>
+          </a>
+          <a href="blog.html">
+            <div
+              class="w-[103px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px] hover:bg-[#2d2522]"
             >
-          </div>
-          <div
-            class="w-[103px] h-[63px] md:[74px] md:[49px] bg-[#0F0F0F] flex items-center justify-center rounded-2xl ml-[15px]"
-          >
-            <a href="blog.html"
-              ><p
+              <p
                 class="font-roboto text-[#81807E] font-[500] w-[55px] h-[27px]"
               >
                 BLOGS
-              </p></a
+              </p>
+            </div>
+          </a>
+          <a href="contact.html">
+            <div
+              class="w-[157px] h-[63px] md:[74px] md:[49px] bg-[#CE7D63] flex items-center justify-center rounded-2xl ml-[15px] hover:bg-[#2d2522]"
             >
-          </div>
-          <div
-            class="w-[157px] h-[63px] md:[74px] md:[49px] bg-[#CE7D63] flex items-center justify-center rounded-2xl ml-[15px]"
-          >
-            <a href="contact.html"
-              ><p
+              <p
                 class="font-roboto text-[#0F0F0F] font-[500] w-[109px] h-[27px]"
               >
                 CONTACTS US
-              </p></a
-            >
-          </div>
+              </p>
+            </div>
+          </a>
         </div>
       </div>
     </header>
@@ -124,6 +190,11 @@
             Empowering Your<br />
             Digital Vision
           </h1>
+          <img
+            src="img/logo-hero-left.png"
+            alt=""
+            class="xl:h-auto xl:w-auto max-h-[117px] max-w-[300px] xl:ml-[25px] w-[175px] h-[50px] xl:hidden"
+          />
 
           <!-- DESKTOP TITLE -->
           <div class="hidden xl:block">
@@ -131,39 +202,24 @@
               <h1
                 class="font-roboto-flex text-[78px] font-[600] uppercase text-[#F9EFEC]"
               >
-                Digital Solutions
+                Empowering Your
               </h1>
 
               <img
                 src="img/logo-hero-left.png"
                 alt=""
-                class="ml-[25px] h-auto w-[300px]"
+                class="xl:h-auto xl:w-auto max-h-[117px] max-w-[300px] xl:ml-[25px] w-[175px] h-[50px]"
               />
             </div>
 
             <h2
               class="h-[117px] w-full font-roboto-flex text-[78px] font-[600] uppercase text-[#F9EFEC]"
             >
-              That Drive Success
+              Digital Vision
             </h2>
           </div>
 
           <!-- START PROJECT -->
-          <div
-            class="mt-[8px] flex items-center gap-[8px] text-[#CE7D63] xl:mt-[20px]"
-          >
-            <div
-              class="flex h-[38px] w-[38px] shrink-0 items-center justify-center rounded-full border-2 border-[#CE7D63] text-[18px] xl:h-[52px] xl:w-[52px] xl:text-[24px]"
-            >
-              →
-            </div>
-
-            <p
-              class="font-roboto-flex text-[13px] font-[500] uppercase xl:text-[20px]"
-            >
-              Start a Project
-            </p>
-          </div>
 
           <!-- DESCRIPTION -->
           <p
@@ -210,7 +266,7 @@
             <div
               class="flex h-[28px] w-[28px] items-center justify-center rounded-full bg-white text-[14px] text-[#0F0F0F] xl:h-[44px] xl:w-[44px] xl:text-[20px]"
             >
-              ↗
+              â†—
             </div>
 
             <p
@@ -224,7 +280,7 @@
     </section>
     <!-- end hero  -->
 
-    <!-- phần dưới hero  -->
+    <!-- pháº§n dÆ°á»›i hero  -->
     <section class="mt-[60px] w-full px-[40px] xl:mt-[100px]">
       <div
         class="mx-auto w-full max-w-[1820px] rounded-[14px] border border-[#1C1C21] p-[5px] xl:rounded-[24px] xl:p-4"
@@ -350,7 +406,7 @@
         </div>
       </div>
     </section>
-    <!-- end phần dưới hero -->
+    <!-- end pháº§n dÆ°á»›i hero -->
 
     <!-- Our Works -->
     <section class="mt-[60px] w-full px-[40px] xl:mt-[100px]">
@@ -473,7 +529,7 @@
               <span
                 class="mx-[4px] text-[7px] text-[#CE7D63] xl:m-2 xl:text-base"
               >
-                •
+                â€¢
               </span>
 
               <p
@@ -496,7 +552,7 @@
               <span
                 class="mx-[4px] text-[7px] text-[#CE7D63] xl:m-2 xl:text-base"
               >
-                •
+                â€¢
               </span>
 
               <p
@@ -612,7 +668,7 @@
             class="order-1 h-[190px] overflow-hidden rounded-[10px] xl:order-2 xl:h-[426px] xl:rounded-2xl"
           >
             <img
-              src="img/png-out-work.png"
+              src="img/hero-img.png"
               alt="A-Aura Ecommerce"
               class="h-full w-full object-cover object-center"
             />
@@ -665,7 +721,7 @@
               <span
                 class="mx-[4px] text-[7px] text-[#CE7D63] xl:m-2 xl:text-base"
               >
-                •
+                â€¢
               </span>
 
               <p
@@ -688,7 +744,7 @@
               <span
                 class="mx-[4px] text-[7px] text-[#CE7D63] xl:m-2 xl:text-base"
               >
-                •
+                â€¢
               </span>
 
               <p
@@ -799,7 +855,7 @@
           <div
             class="flex h-[30px] w-[30px] items-center justify-center rounded-full border border-[#292929] text-[16px] text-[#F3DFD8]"
           >
-            ↓
+            â†“
           </div>
 
           <p
@@ -1002,7 +1058,7 @@
             </div>
           </article>
 
-          <!-- CARD 4: CHỈ HIỆN TỪ XL -->
+          <!-- CARD 4: CHá»ˆ HIá»†N Tá»ª XL -->
           <article
             class="hidden h-[398px] flex-col overflow-hidden rounded-2xl bg-[#1A1A1A] xl:flex"
           >
@@ -1053,14 +1109,14 @@
           </article>
         </div>
 
-        <!-- ALL TESTIMONIALS - CHỈ HIỆN DƯỚI XL -->
+        <!-- ALL TESTIMONIALS - CHá»ˆ HIá»†N DÆ¯á»šI XL -->
         <div
           class="mt-[5px] flex min-h-[84px] w-full items-center justify-center gap-[12px] rounded-[10px] bg-[#1A1A1A] xl:hidden"
         >
           <div
             class="flex h-[48px] w-[48px] items-center justify-center rounded-full border border-[#2B2B30] text-[25px] text-[#F3DFD8]"
           >
-            ↓
+            â†“
           </div>
 
           <p
@@ -1086,7 +1142,7 @@
             Frequently Asked Questions
           </h2>
 
-          <!-- Chỉ hiện desktop -->
+          <!-- Chá»‰ hiá»‡n desktop -->
           <div class="hidden items-center xl:flex">
             <img
               src="img/arrow-our-service.png"
@@ -1326,19 +1382,19 @@
             class="flex min-w-max items-center gap-[10px] whitespace-nowrap font-roboto text-[10px] uppercase tracking-[1px] text-[#676665] xl:gap-5 xl:text-[18px]"
           >
             <span>Follow Us on Social Media</span>
-            <span class="text-[#CE7D63]">•</span>
+            <span class="text-[#CE7D63]">â€¢</span>
 
             <span>Follow Us on Social Media</span>
-            <span class="text-[#CE7D63]">•</span>
+            <span class="text-[#CE7D63]">â€¢</span>
 
             <span>Follow Us on Social Media</span>
-            <span class="text-[#CE7D63]">•</span>
+            <span class="text-[#CE7D63]">â€¢</span>
 
             <span>Follow Us on Social Media</span>
-            <span class="text-[#CE7D63]">•</span>
+            <span class="text-[#CE7D63]">â€¢</span>
 
             <span>Follow Us on Social Media</span>
-            <span class="text-[#CE7D63]">•</span>
+            <span class="text-[#CE7D63]">â€¢</span>
           </div>
         </div>
 
@@ -1736,7 +1792,7 @@
               <p
                 class="font-roboto-mono text-[10px] text-[#B3B3B2] xl:text-[18px]"
               >
-                © 2024 NexGen. All rights reserved.
+                Â© 2024 NexGen. All rights reserved.
               </p>
 
               <div
@@ -1766,3 +1822,4 @@
     <!-- end footer -->
   </body>
 </html>
+
