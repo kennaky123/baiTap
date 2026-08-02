@@ -1,9 +1,18 @@
-const check = (fullName) => {
-  for (let i = 0; i < fullName.length; i++) {
-    if (fullName[i] === " ") {
-      fullName[i + 1].toUpperCase();
+function countVowels(a) {
+  a.toLowerCase();
+  let count = 0;
+  for (let i = 0; i < a.length; i++) {
+    if (
+      a[i] === "a" ||
+      a[i] === "e" ||
+      a[i] === "i" ||
+      a[i] === "o" ||
+      a[i] === "u"
+    ) {
+      count++;
     }
   }
-  console.log(fullName);
-};
-check("Dang q");
+  console.log(count);
+}
+
+countVowels("Xin chao cac ban");
