@@ -1,27 +1,13 @@
-function Calc(value) {
-  this.value = value;
+function Product(name, price, quantity) {
+  this.name = name;
+  this.price = price;
+  this.quantity = quantity;
 }
-Calc.prototype.add = function (number) {
-  this.value += number;
-  return this;
+Product.prototype.getTotal = function () {
+  return this.price * this.quantity;
 };
-Calc.prototype.minus = function (number) {
-  this.value -= number;
-  return this;
-};
-Calc.prototype.mul = function (number) {
-  this.value *= number;
-  return this;
-};
-Calc.prototype.div = function (number) {
-  this.value /= number;
-  return this;
-};
-Calc.prototype.get = function () {
-  return this.value;
-};
-Calc.start = function (value) {
-  return new Calc(value);
-};
-const result = new Calc(10).add(15).minus(3).mul(3).div(3).get();
-console.log(result);
+const product1 = new Product("Laptop", 20000000, 2);
+const product2 = new Product("Điện thoại", 10000000, 3);
+console.log(product1.getTotal());
+console.log(product2.getTotal());
+console.log(product1.getTotal === product2.getTotal);
