@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Toan",
+      "email": "toan@gmail.com"
+    }
+  ],
+
+  "products": [
+    {
+      "id": "1",
+      "name": "iPhone 15 Pro Max",
+      "price": 29990000,
+      "category": "Điện thoại",
+      "quantity": 10,
+      "description": "Điện thoại Apple iPhone 15 Pro Max"
+    }
+  ],
+
+  "posts": [
+    {
+      "id": "1",
+      "userId": "1",
+      "title": "Bài viết 1"
+    },
+    {
+      "id": "2",
+      "userId": "1",
+      "title": "Bài viết 2"
+    }
+  ]
+}
