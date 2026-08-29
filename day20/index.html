@@ -1,19 +1,70 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Document</title>
+    <title>Bài tập: Validate Form Đăng Ký</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="box">
-      <h1>Hello anh em</h1>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <div class="wrap">
+      <h1>Form Đăng Ký Tài Khoản</h1>
+      <p class="subtitle">
+        HTML và CSS đã hoàn chỉnh. Nhiệm vụ của mọi người là: mở
+        <code>script.js</code>, đọc các <code>TODO</code> và tự viết logic
+        validate. Xem file <code>de-bai.md</code> để biết đầy đủ yêu cầu.
+      </p>
+
+      <div class="card">
+        <form id="registerForm" novalidate>
+          <div class="field" id="field-fullname">
+            <label for="fullname">Họ và tên</label>
+            <input type="text" id="fullname" placeholder="Nguyễn Văn A" />
+            <div class="hint">Không được để trống, tối thiểu 2 ký tự</div>
+            <div class="error-msg"></div>
+          </div>
+
+          <div class="field" id="field-username">
+            <label for="username">Tên đăng nhập</label>
+            <input type="text" id="username" placeholder="vd: vana2024" />
+            <div class="hint">4–16 ký tự, chỉ gồm chữ, số, dấu gạch dưới</div>
+            <div class="error-msg"></div>
+          </div>
+
+          <div class="field" id="field-email">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="[email protected]" />
+            <div class="hint">Đúng định dạng email</div>
+            <div class="error-msg"></div>
+          </div>
+
+          <div class="field" id="field-phone">
+            <label for="phone">Số điện thoại</label>
+            <input type="text" id="phone" placeholder="0912345678" />
+            <div class="hint">Bắt đầu bằng 0, đủ 10 số</div>
+            <div class="error-msg"></div>
+          </div>
+
+          <div class="field" id="field-password">
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" placeholder="••••••••" />
+            <div class="hint">Tối thiểu 8 ký tự, có ít nhất 1 chữ và 1 số</div>
+            <div class="error-msg"></div>
+          </div>
+
+          <div class="field" id="field-confirm">
+            <label for="confirm">Xác nhận mật khẩu</label>
+            <input type="password" id="confirm" placeholder="••••••••" />
+            <div class="hint">Phải khớp với mật khẩu ở trên</div>
+            <div class="error-msg"></div>
+          </div>
+
+          <button type="submit">Đăng ký</button>
+          <div id="result"></div>
+        </form>
+      </div>
     </div>
 
-    <button>Ẩn</button>
-
-    <script src="bai1.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

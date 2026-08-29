@@ -1,0 +1,150 @@
+:root {
+  --ink: #1b2430;
+  --paper: #f6f5f1;
+  --card: #ffffff;
+  --line: #e2e0da;
+  --accent: #2f5d50;
+  --accent-soft: #e7efec;
+  --error: #b3402a;
+  --error-soft: #fbebe7;
+  --ok: #2f7a4f;
+  --mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--paper);
+  font-family: "Georgia", "Times New Roman", serif;
+  color: var(--ink);
+  display: flex;
+  justify-content: center;
+  padding: 48px 20px;
+}
+.wrap {
+  width: 100%;
+  max-width: 520px;
+}
+.lesson-tag {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+h1 {
+  font-size: 30px;
+  margin: 0 0 6px;
+  font-weight: 700;
+}
+.subtitle {
+  color: #5b6472;
+  font-size: 14.5px;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+.subtitle code {
+  background: #eee;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 28px;
+}
+.field {
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.hint {
+  font-size: 12px;
+  color: #7a8290;
+  margin-top: 4px;
+  font-family: var(--mono);
+}
+input {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #cfcdc6;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  background: #fdfdfc;
+  transition:
+    border-color 0.15s,
+    background 0.15s;
+}
+input:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: #fff;
+}
+.field.error input {
+  border-color: var(--error);
+  background: var(--error-soft);
+}
+.field.success input {
+  border-color: var(--ok);
+}
+.error-msg {
+  display: none;
+  font-size: 12.5px;
+  color: var(--error);
+  margin-top: 6px;
+  font-weight: 600;
+}
+.field.error .error-msg {
+  display: block;
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  margin-top: 6px;
+}
+button:hover {
+  background: #264a3f;
+}
+
+#result {
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  display: none;
+}
+#result.show {
+  display: block;
+}
+#result.ok {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+#result.fail {
+  background: var(--error-soft);
+  color: var(--error);
+  border: 1px solid var(--error);
+}
