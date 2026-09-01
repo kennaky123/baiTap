@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sổ Việc Cần Làm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="notebook">
+      <header class="notebook__header">
+        <p class="notebook__eyebrow">Hôm nay là</p>
+        <h1 class="notebook__title" id="today-date">Thứ Tư, 26 Tháng 8</h1>
+      </header>
+
+      <form class="add-form" id="add-form">
+        <input
+          type="text"
+          id="todo-input"
+          class="add-form__input"
+          placeholder="Việc cần làm hôm nay..."
+          autocomplete="off"
+        />
+        <button type="submit" class="add-form__button">Thêm</button>
+      </form>
+
+      <div class="filters" id="filters">
+        <button class="filters__btn is-active" data-filter="all">Tất cả</button>
+        <button class="filters__btn" data-filter="active">Đang làm</button>
+        <button class="filters__btn" data-filter="completed">Đã xong</button>
+      </div>
+
+      <ul class="todo-list" id="todo-list">
+        <!-- Các <li> việc cần làm sẽ được JS render vào đây -->
+      </ul>
+
+      <p class="empty-state" id="empty-state">
+        Trang sổ trống trơn. Ghi việc đầu tiên vào nhé!
+      </p>
+
+      <footer class="notebook__footer">
+        <span id="items-left">0 việc còn lại</span>
+        <button class="clear-btn" id="clear-completed">Xoá việc đã xong</button>
+      </footer>
+    </main>
+
+    <!-- Mẫu 1 dòng việc, dùng để JS "sao chép" khi render (không bắt buộc dùng) -->
+    <template id="todo-item-template">
+      <li class="todo-item" data-id="">
+        <button
+          class="todo-item__check"
+          aria-label="Đánh dấu hoàn thành"
+        ></button>
+        <span class="todo-item__text"></span>
+        <button class="todo-item__edit" aria-label="Sửa">✎</button>
+        <button class="todo-item__delete" aria-label="Xoá">✕</button>
+      </li>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
