@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <h1>Blog Manager</h1>
+        <p>Đăng nhập để quản lý bài viết</p>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Nhập username"
+                >
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Nhập password"
+                >
+            </div>
+            <p id="loginError" class="error"></p>
+            <button id="loginBtn" type="submit">
+                Đăng nhập
+            </button>
+        </form>
+        <div class="demo-account">
+            <strong>Tài khoản demo</strong>
+            <p>Username: emilys</p>
+            <p>Password: emilyspass</p>
+        </div>
+    </div>
+    <script src="./login.js"></script>
+</body>
+</html>
