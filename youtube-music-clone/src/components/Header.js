@@ -1,0 +1,4 @@
+import { Icon } from "./Icon.js";
+export function Header() {
+  return `<header class="app-header"><div class="flex items-center gap-5"><button id="menu-toggle" class="icon-button" aria-label="Mở menu" aria-expanded="false">${Icon("menu")}</button><a href="/" data-navigo class="brand"><img src="/logo.svg" alt="" width="30" height="30"><span>Music</span></a></div><form id="search-form" role="search" class="search-box"><button aria-label="Tìm kiếm">${Icon("search", 22)}</button><input id="search-input" aria-label="Tìm bài hát, đĩa nhạc, nghệ sĩ" placeholder="Tìm bài hát, đĩa nhạc, nghệ sĩ" autocomplete="off"><button type="button" id="search-clear" aria-label="Xóa tìm kiếm">${Icon("close", 18)}</button><div id="search-suggestions" hidden></div></form><div id="auth-actions" class="flex items-center gap-3 ml-auto"></div></header>`;
+}
