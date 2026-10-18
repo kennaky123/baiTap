@@ -1,0 +1,17 @@
+{
+  "name": "day25",
+  "version": "1.0.0",
+  "description": "F8 - Day 25: TypeScript Basics, Interfaces, Functions and Strict Mode",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "bai1": "tsc && node dist/bai1.js",
+    "bai2": "tsc && node dist/bai2.js",
+    "bai3": "tsc && node dist/bai3.js",
+    "run:all": "tsc && node dist/bai1.js && node dist/bai2.js && node dist/bai3.js"
+  },
+  "keywords": ["typescript", "f8", "day25"],
+  "author": "",
+  "license": "ISC"
+}
+
